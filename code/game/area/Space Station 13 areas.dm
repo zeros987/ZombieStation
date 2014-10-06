@@ -355,6 +355,10 @@ proc/process_ghost_teleport_locs()
 	name = "\improper Romero Shuttle Bay"
 	icon_state = "red2"
 
+/area/romero/armory
+	name = "\improper Romero Armory"
+	icon_state = "red2"
+
 /area/romero/medbay
 	name = "\improper Romero Medbay"
 	icon_state = "blueold"

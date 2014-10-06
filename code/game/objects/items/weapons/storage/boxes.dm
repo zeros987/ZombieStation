@@ -149,6 +149,21 @@
 		new /obj/item/weapon/grenade/flashbang(src)
 		new /obj/item/weapon/grenade/flashbang(src)
 
+/obj/item/weapon/storage/box/smokegrenades
+	name = "box of smoke bombs (WARNING)"
+	desc = "<B>WARNING: These devices are for use in dire situations where you need to escape, they can cause lung infections.</B>"
+	icon_state = "flashbang"
+
+	New()
+		..()
+		new /obj/item/weapon/grenade/smokebomb(src)
+		new /obj/item/weapon/grenade/smokebomb(src)
+		new /obj/item/weapon/grenade/smokebomb(src)
+		new /obj/item/weapon/grenade/smokebomb(src)
+		new /obj/item/weapon/grenade/smokebomb(src)
+		new /obj/item/weapon/grenade/smokebomb(src)
+		new /obj/item/weapon/grenade/smokebomb(src)
+
 /obj/item/weapon/storage/box/emps
 	name = "emp grenades"
 	desc = "A box with 5 emp grenades."

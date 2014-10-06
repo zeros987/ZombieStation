@@ -69,17 +69,17 @@
 			authenticated = 0
 		if("codered")
 			codered = 1
-			world << "<font size=4 color='red'>Attention! The Sulaco is now at code red!</font>"
-			world << "<font color='red'>All personnel are required to return to the Sulaco and report to their commanding officer for further orders. This is not a drill.</font>"
+			world << "<font size=4 color='red'>Attention! The Romero is now at code red!</font>"
+			world << "<font color='red'>All personnel are required to return to the Romero and report to their commanding officer for further orders. This is not a drill.</font>"
 			for(var/area/A in world)
-				if(istype(A, /area/sulaco))
+				if(istype(A, /area/romero))
 					A.readyalert()
 		if("codegreen")
 			codered = 0
 			world << "<font size=4 color='red'>Attention! Code red on the Sulaco has been lifted!</font>"
 			world << "<font color='red'>All personnel may return to normal operations.</font>"
 			for(var/area/A in world)
-				if(istype(A, /area/sulaco))
+				if(istype(A, /area/romero))
 					A.readyreset()
 /*		if("callhiv")
 			var/input = stripped_input(usr, "What is the nature of your emergency?.", "What?")

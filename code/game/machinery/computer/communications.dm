@@ -29,7 +29,7 @@
 	var/const/STATE_CONFIRM_LEVEL = 9
 	var/const/STATE_CREWTRANSFER = 10
 
-	var/status_display_freq = "1351"
+	var/status_display_freq = "1435"
 	var/stat_msg1
 	var/stat_msg2
 
@@ -44,7 +44,7 @@
 /obj/machinery/computer/communications/Topic(href, href_list)
 	if(..())
 		return
-	if (src.z > 6)
+	if (src.z > 1)
 		usr << "\red <b>Unable to establish a connection</b>: \black You're too far away from the station!"
 		return
 	usr.set_machine(src)
