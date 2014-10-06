@@ -3,16 +3,16 @@
 /obj/structure/closet/secure_closet/marine_commander
 	name = "Commander's Locker"
 	req_access = list()
-	icon_state = "sec1"
-	icon_closed = "sec"
-	icon_locked = "sec1"
-	icon_opened = "secopen"
-	icon_broken = "secbroken"
-	icon_off = "secoff"
+	icon_state = "capsecure1"
+	icon_closed = "capsecure"
+	icon_locked = "capsecure1"
+	icon_opened = "capsecureopen"
+	icon_broken = "capsecurebroken"
+	icon_off = "capsecureoff"
 
 	New()
 		sleep(2)
-		new /obj/item/weapon/storage/backpack/mcommander(src)
+		new /obj/item/weapon/storage/backpack/captain(src)
 		new /obj/item/clothing/shoes/marinechief/commander(src)
 		new /obj/item/clothing/gloves/marine/techofficer/commander(src)
 		new /obj/item/clothing/under/rank/romerocommander(src)

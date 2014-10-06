@@ -303,9 +303,9 @@
 		if(access_romero_engine)
 			return "Romero Engineer"
 		if(access_romero_medical)
-			return "Romero Medic"
+			return "Romero Medical Doctor"
 		if(access_romero_research)
-			return "Romero Researcher"
+			return "Romero Researc Director"
 
 
 /proc/get_centcom_access_desc(A)

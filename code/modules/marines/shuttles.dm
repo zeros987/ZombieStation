@@ -400,7 +400,7 @@ proc/move_unknown_shuttle()
 	if(alien_shuttle_moving)
 		dat += "Location: <font color='red'>Moving</font> <br>"
 	else
-		dat += "Location: [alien_shuttle_location ? "Station" : "Sulaco"] <br>"
+		dat += "Location: [alien_shuttle_location ? "Station" : "Romero"] <br>"
 
 	dat += "<b><A href='?src=\ref[src];move=[1]'>Send</A></b></center>"
 

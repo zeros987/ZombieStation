@@ -243,7 +243,7 @@
 	autolinkers = list("security")
 
 /obj/machinery/telecomms/server/marine
-	network = "sulaconet"
+	network = "romeronet"
 
 /obj/machinery/telecomms/server/marine/romero
 	id = "Romero Server"

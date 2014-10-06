@@ -868,7 +868,7 @@
 	icon_state = "robotics"
 	icon_deny = "robotics-deny"
 	req_access_txt = "0"
-	products = list(/obj/item/weapon/gun/projectile/pistol = 10,/obj/item/weapon/gun/projectile/automatic/c20r = 10,/obj/item/weapon/gun/projectile/automatic/l6_saw = 10,/obj/item/weapon/gun/projectile/automatic/mini_uzi = 10)
+	products = list(/obj/item/weapon/gun/projectile/pistol = 10,/obj/item/weapon/gun/projectile/automatic/c20r = 10,/obj/item/weapon/gun/projectile/automatic/l6_saw = 10,/obj/item/weapon/gun/projectile/automatic/mini_uzi = 10,/obj/item/weapon/combatknife = 10)
 
 /obj/machinery/vending/marine/ammo
 	name = "Ammo Vending Machine"

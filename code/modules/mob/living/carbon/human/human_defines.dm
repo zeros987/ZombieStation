@@ -48,6 +48,8 @@
 	var/icon/stand_icon = null
 	var/icon/lying_icon = null
 
+	var/base_icon_state = "caucasian1_m"
+
 	var/miming = null //Toggle for the mime's abilities.
 	var/special_voice = "" // For changing our voice. Used by a symptom.
 
