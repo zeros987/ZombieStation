@@ -2,7 +2,7 @@
 	name = "monkey"
 	voice_name = "monkey"
 	speak_emote = list("chimpers")
-	icon_state = "monkey1"
+	icon_state = "walker_s"
 	icon = 'icons/mob/monkey.dmi'
 	gender = NEUTER
 	pass_flags = PASSTABLE

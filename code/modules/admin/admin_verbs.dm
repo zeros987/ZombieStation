@@ -70,7 +70,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/man_up,
 	/client/proc/global_man_up,
 	/client/proc/response_team, // Response Teams admin verb
-//	/client/proc/zombie_verb
+	/client/proc/zombie_verb
 )
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,

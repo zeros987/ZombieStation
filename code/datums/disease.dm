@@ -126,7 +126,7 @@ var/list/diseases = typesof(/datum/disease) - /datum/disease
 			source = affected_mob
 		else //no source and no mob affected. Rogue disease. Break
 			return
-	
+
 	if(affected_mob.reagents != null)
 		if(affected_mob)
 			if(affected_mob.reagents.has_reagent("spaceacillin"))
@@ -161,7 +161,16 @@ var/list/diseases = typesof(/datum/disease) - /datum/disease
 					del(D) // if there are somehow two viruses of the same kind in the system, delete the other one
 
 	if(holder == affected_mob)
-		if(affected_mob.stat != DEAD) //he's alive
+		if(/datum/disease/z_virus)
+			if(affected_mob.stat == DEAD)
+				stage_act()
+			else if(affected_mob.stat != DEAD) //he's alive
+				stage_act()
+			else
+				if(spread_type!=SPECIAL)
+					spread_type = CONTACT_GENERAL
+				affected_mob = null
+		else if(affected_mob.stat != DEAD) //he's alive
 			stage_act()
 		else //he's dead.
 			if(spread_type!=SPECIAL)
